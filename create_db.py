@@ -39,6 +39,24 @@ def check_table():
             )
             '''
         )
+        debug('verify user admin')
+        finnance.execute('select * from usuarios where usuarios.username = "admin"')
+        if len(finnance.fetchall()) > 0:
+            info('user admin already exists')
+        else:
+            debug('create user admin')
+            finnance.execute(
+                '''insert into usuarios(
+                    username,password,full_name,salario,level
+                ) values(
+                    'admin',
+                    '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918',
+                    'usuario administrador',
+                    0,
+                    99  
+                )
+                '''
+        )
         finnance_db.commit()
     except InternalError as erro:
         error(erro)
@@ -46,3 +64,5 @@ def check_table():
         error(erro)
 
 
+if __name__ == '__main__':
+    check_table()

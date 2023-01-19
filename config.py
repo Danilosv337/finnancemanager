@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from os import environ
 from mysql.connector import connect,cursor
 from mysql.connector.errors import InternalError,ProgrammingError
-from logging import basicConfig,FileHandler,StreamHandler, DEBUG,INFO,ERROR,debug,info,error
+from logging import basicConfig,FileHandler,StreamHandler, DEBUG,INFO,ERROR,CRITICAL,debug,info,error
 
 # keys
 load_dotenv('.env')
@@ -25,7 +25,7 @@ Azul = '\033[94m'
 Fim = '\033[0m'
 
 filelog = FileHandler("logging.log","w",delay=True)
-filelog.setLevel(ERROR)
+filelog.setLevel(CRITICAL)
 
 basicConfig(
     level=DEBUG,
