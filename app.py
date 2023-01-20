@@ -7,9 +7,18 @@ class Login_panel(Ui_login_window,QMainWindow):
     def __init__(self,parent=None):
         super().__init__(parent)
         super().setupUi(self)
+        #Config Window
         self.setFixedSize(493,351)
         self.setWindowFlag(Qt.FramelessWindowHint)
+        # self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowOpacity(.9)
+
+        #Config Buttons
         self.btn_close.clicked.connect(self.close)
+        self.btn_quit.clicked.connect(self.close)
+        self.btn_minimize.clicked.connect(self.showMinimized)
+
+
     def mousePressEvent(self, event):
         self.dragPos = event.globalPosition().toPoint()
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'loginZMbXfo.ui'
+## Form generated from reading UI file 'loginYBlYFf.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -40,10 +40,10 @@ class Ui_login_window(object):
 "font-weight:  bold;\n"
 "}\n"
 "QPushButton#btn_close,QPushButton#btn_minimize{\n"
-"border: 1px solid white;\n"
+"border: none;\n"
 "height: 20px;\n"
 "width: 40px;\n"
-"border-radius: none;\n"
+"border-radius: 10px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -101,6 +101,7 @@ class Ui_login_window(object):
 
         self.Textinput_password = QLineEdit(self.FRAME_INPUT)
         self.Textinput_password.setObjectName(u"Textinput_password")
+        self.Textinput_password.setEchoMode(QLineEdit.Password)
 
         self.gridLayout_3.addWidget(self.Textinput_password, 1, 3, 1, 1)
 
