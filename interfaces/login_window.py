@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'loginYBlYFf.ui'
+## Form generated from reading UI file 'logingSGzLt.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -49,6 +49,9 @@ class Ui_login_window(object):
 "QPushButton:hover{\n"
 "background-color: rgba(11,52,227,0.6)\n"
 "}\n"
+"QPushButton:pressed{\n"
+"background-color: rgba(11,52,200,0.4)\n"
+"}\n"
 "QLabel{\n"
 "color: white;\n"
 "}\n"
@@ -74,15 +77,10 @@ class Ui_login_window(object):
         self.FRAME_INPUT.setFrameShadow(QFrame.Raised)
         self.gridLayout_3 = QGridLayout(self.FRAME_INPUT)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.label_2 = QLabel(self.FRAME_INPUT)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setPixmap(QPixmap(u":/icons/13072964931556282345.svg"))
+        self.Textinput_user = QLineEdit(self.FRAME_INPUT)
+        self.Textinput_user.setObjectName(u"Textinput_user")
 
-        self.gridLayout_3.addWidget(self.label_2, 1, 2, 1, 1)
-
-        self.horizontalSpacer_5 = QSpacerItem(80, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.gridLayout_3.addItem(self.horizontalSpacer_5, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.Textinput_user, 0, 3, 1, 1)
 
         self.label = QLabel(self.FRAME_INPUT)
         self.label.setObjectName(u"label")
@@ -90,30 +88,44 @@ class Ui_login_window(object):
 
         self.gridLayout_3.addWidget(self.label, 0, 2, 1, 1)
 
-        self.horizontalSpacer_6 = QSpacerItem(80, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
-
-        self.gridLayout_3.addItem(self.horizontalSpacer_6, 0, 4, 1, 1)
-
-        self.Textinput_user = QLineEdit(self.FRAME_INPUT)
-        self.Textinput_user.setObjectName(u"Textinput_user")
-
-        self.gridLayout_3.addWidget(self.Textinput_user, 0, 3, 1, 1)
-
         self.Textinput_password = QLineEdit(self.FRAME_INPUT)
         self.Textinput_password.setObjectName(u"Textinput_password")
         self.Textinput_password.setEchoMode(QLineEdit.Password)
 
         self.gridLayout_3.addWidget(self.Textinput_password, 1, 3, 1, 1)
 
+        self.Textedit_user = QLabel(self.FRAME_INPUT)
+        self.Textedit_user.setObjectName(u"Textedit_user")
+
+        self.gridLayout_3.addWidget(self.Textedit_user, 0, 1, 1, 1)
+
+        self.label_2 = QLabel(self.FRAME_INPUT)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setPixmap(QPixmap(u":/icons/13072964931556282345.svg"))
+
+        self.gridLayout_3.addWidget(self.label_2, 1, 2, 1, 1)
+
         self.Textedit_password = QLabel(self.FRAME_INPUT)
         self.Textedit_password.setObjectName(u"Textedit_password")
 
         self.gridLayout_3.addWidget(self.Textedit_password, 1, 1, 1, 1)
 
-        self.Textedit_user = QLabel(self.FRAME_INPUT)
-        self.Textedit_user.setObjectName(u"Textedit_user")
+        self.horizontalSpacer_6 = QSpacerItem(80, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
 
-        self.gridLayout_3.addWidget(self.Textedit_user, 0, 1, 1, 1)
+        self.gridLayout_3.addItem(self.horizontalSpacer_6, 0, 4, 1, 1)
+
+        self.horizontalSpacer_5 = QSpacerItem(80, 20, QSizePolicy.Fixed, QSizePolicy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_5, 0, 0, 1, 1)
+
+        self.Textinput_loginmessage = QLabel(self.FRAME_INPUT)
+        self.Textinput_loginmessage.setObjectName(u"Textinput_loginmessage")
+        font = QFont()
+        font.setPointSize(12)
+        self.Textinput_loginmessage.setFont(font)
+        self.Textinput_loginmessage.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_3.addWidget(self.Textinput_loginmessage, 2, 1, 1, 3)
 
 
         self.gridLayout_2.addWidget(self.FRAME_INPUT, 1, 0, 1, 1)
@@ -222,10 +234,11 @@ class Ui_login_window(object):
 
     def retranslateUi(self, login_window):
         login_window.setWindowTitle(QCoreApplication.translate("login_window", u"MainWindow", None))
-        self.label_2.setText("")
         self.label.setText("")
-        self.Textedit_password.setText(QCoreApplication.translate("login_window", u"Senha:", None))
         self.Textedit_user.setText(QCoreApplication.translate("login_window", u"Usu\u00e1rio:", None))
+        self.label_2.setText("")
+        self.Textedit_password.setText(QCoreApplication.translate("login_window", u"Senha:", None))
+        self.Textinput_loginmessage.setText(QCoreApplication.translate("login_window", u"teste", None))
         self.btn_close.setText("")
         self.btn_minimize.setText("")
         self.img_logo.setText("")
