@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'logingSGzLt.ui'
+## Form generated from reading UI file 'loginnVkFEC.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -30,11 +30,10 @@ class Ui_login_window(object):
 "	background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(53, 132, 228, 255), stop:1 rgba(26, 95, 180, 255));\n"
 "}\n"
 "QPushButton{\n"
-"color: white;\n"
+"color: black;\n"
 "height: 30px;\n"
 "max-width: 120px;\n"
-"background-color: #0B34E3;\n"
-"border: 2px solid white;\n"
+"background-color: white;\n"
 "border-radius: 8px;\n"
 "text-transform: uppercase;\n"
 "font-weight:  bold;\n"
@@ -47,7 +46,8 @@ class Ui_login_window(object):
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgba(11,52,227,0.6)\n"
+"background-color: rgba(11,52,227,0.6);\n"
+"color: white;\n"
 "}\n"
 "QPushButton:pressed{\n"
 "background-color: rgba(11,52,200,0.4)\n"
@@ -69,6 +69,11 @@ class Ui_login_window(object):
 "}")
         self.centralwidget = QWidget(login_window)
         self.centralwidget.setObjectName(u"centralwidget")
+        self.centralwidget.setStyleSheet(u"QWidget#centralwidget{\n"
+"border-radius: 8px;\n"
+"border: 1px solid black;\n"
+"background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(53, 132, 228, 255), stop:1 rgba(26, 95, 180, 255));\n"
+"}")
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.FRAME_INPUT = QFrame(self.centralwidget)
@@ -123,6 +128,7 @@ class Ui_login_window(object):
         font = QFont()
         font.setPointSize(12)
         self.Textinput_loginmessage.setFont(font)
+        self.Textinput_loginmessage.setStyleSheet(u"")
         self.Textinput_loginmessage.setAlignment(Qt.AlignCenter)
 
         self.gridLayout_3.addWidget(self.Textinput_loginmessage, 2, 1, 1, 3)
@@ -147,18 +153,14 @@ class Ui_login_window(object):
         self.btn_close = QPushButton(self.LOGO)
         self.btn_close.setObjectName(u"btn_close")
         self.btn_close.setCursor(QCursor(Qt.PointingHandCursor))
-        icon = QIcon()
-        icon.addFile(u":/icons/x.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_close.setIcon(icon)
+        self.btn_close.setStyleSheet(u"")
 
         self.gridLayout.addWidget(self.btn_close, 0, 4, 1, 1)
 
         self.btn_minimize = QPushButton(self.LOGO)
         self.btn_minimize.setObjectName(u"btn_minimize")
         self.btn_minimize.setCursor(QCursor(Qt.PointingHandCursor))
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/dash.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_minimize.setIcon(icon1)
+        self.btn_minimize.setStyleSheet(u"font-size: 20px")
 
         self.gridLayout.addWidget(self.btn_minimize, 0, 3, 1, 1)
 
@@ -238,9 +240,9 @@ class Ui_login_window(object):
         self.Textedit_user.setText(QCoreApplication.translate("login_window", u"Usu\u00e1rio:", None))
         self.label_2.setText("")
         self.Textedit_password.setText(QCoreApplication.translate("login_window", u"Senha:", None))
-        self.Textinput_loginmessage.setText(QCoreApplication.translate("login_window", u"teste", None))
-        self.btn_close.setText("")
-        self.btn_minimize.setText("")
+        self.Textinput_loginmessage.setText("")
+        self.btn_close.setText(QCoreApplication.translate("login_window", u"X", None))
+        self.btn_minimize.setText(QCoreApplication.translate("login_window", u"-", None))
         self.img_logo.setText("")
         self.btn_login.setText(QCoreApplication.translate("login_window", u"Login", None))
         self.btn_quit.setText(QCoreApplication.translate("login_window", u"Sair", None))
