@@ -1,0 +1,8 @@
+logging.log
+__pycache__
+Bibliotecas
+designs
+.env
+install.py 
+data_version.py
+Data.txt
