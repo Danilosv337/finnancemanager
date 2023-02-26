@@ -18,6 +18,8 @@ try:
     finnance_db =connect(host=host,user=user,password=password,database=database)
     finnance = finnance_db.cursor(buffered=True)
 except DatabaseError:
+    finnance_db = None
+    finnance = None
     error('No Conection Or Database Exists')
     exit()
 

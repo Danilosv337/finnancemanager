@@ -1,6 +1,6 @@
 from interfaces.login_window import *
 from interfaces.manager import *
-from modules.main import  *
+from modules.system import  *
 
 
 
